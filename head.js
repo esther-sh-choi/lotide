@@ -5,6 +5,9 @@ const assertEqual = (actual, expected) => {
 };
 
 const head = (arr) => {
+  if (!arr || !arr.length) {
+    return undefined;
+  }
   return arr[0];
 };
 
