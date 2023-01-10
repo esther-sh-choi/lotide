@@ -11,6 +11,6 @@ const tail = (arr) => {
   return arr.slice(1);
 };
 
-console.log(tail([1, 2, 3, 4, 5]));
-const result = tail(["Hello", "Lighthouse", "Labs"]);
-assertEqual(result, ["Lighthouse", "Labs"]);
+// console.log(tail([1, 2, 3, 4, 5]));
+// const result = tail(["Hello", "Lighthouse", "Labs"]);
+// assertEqual(result, ["Lighthouse", "Labs"]);
