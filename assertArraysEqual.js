@@ -1,6 +1,7 @@
 const util = require("util");
 
 const eqArrays = (arr1, arr2) => {
+  // if arrays are not the same length, they are not equal
   if (arr1.length !== arr2.length) {
     return false;
   }
@@ -11,20 +12,23 @@ const eqArrays = (arr1, arr2) => {
     }
   }
 
+  // if the function didn't return a false so far, it will automatically return true
   return true;
 };
 
 const assertArraysEqual = (arr1, arr2) => {
+  // add util.inspect so that the arrays will be convered to string type before being printed to the console
+  // this is crucial to keeps the quotes on the string elements in the console
   eqArrays(arr1, arr2)
     ? console.log(
-        `✅✅✅ Assertion Passed: [${util.inspect(arr1)}] === [${util.inspect(
+        `✅✅✅ Assertion Passed: ${util.inspect(arr1)} === ${util.inspect(
           arr2
-        )}]`
+        )}`
       )
     : console.log(
-        `🛑🛑🛑 Assertion Failed: [${util.inspect(arr1)}] !== [${util.inspect(
+        `🛑🛑🛑 Assertion Failed: ${util.inspect(arr1)} !== ${util.inspect(
           arr2
-        )}]`
+        )}`
       );
 };
 
