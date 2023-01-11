@@ -34,34 +34,23 @@ const assertArraysEqual = (arr1, arr2) => {
   /* eslint-enable */
 };
 
-const without = (sourceArr, itemsToRemove) => {
-  if (!itemsToRemove || !itemsToRemove.length) return sourceArr;
-  if (!sourceArr || !sourceArr.length) return [];
+const middle = (arr) => {
+  if (arr.length <= 2) return [];
 
-  return sourceArr.filter((element) => !itemsToRemove.includes(element));
-};
+  const middleIndex = arr.length / 2;
 
-const without2 = (sourceArr, itemsToRemove) => {
-  if (!itemsToRemove && !itemsToRemove.length) return sourceArr;
-  if (!sourceArr && !sourceArr.length) return [];
+  console.log(middleIndex);
 
-  let newArr = [];
-  for (let element of sourceArr) {
-    let isMatch = false;
-    for (let item of itemsToRemove) {
-      isMatch = element === item;
-    }
-    if (!isMatch) {
-      newArr.push(element);
-    }
+  if (Number.isInteger(middleIndex)) {
+    return [arr[middleIndex - 1], arr[middleIndex]];
+  } else {
+    return [arr[middleIndex]];
   }
-
-  return newArr;
 };
 
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
-
-const words = ["hello", "world", "lighthouse"];
-without(words, ["lighthouse"]);
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
+console.log(middle([1]));
+console.log(middle([1, 2]));
+console.log(middle([1, 2, 3]));
+console.log(middle([1, 2, 3, 4, 5]));
+console.log(middle([1, 2, 3, 4]));
+console.log(middle([1, 2, 3, 4, 5, 6]));
