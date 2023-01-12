@@ -21,8 +21,12 @@ const eqArrays = (arr1, arr2) => {
 const eqObjects = (object1, object2) => {
   if (Object.keys(object1).length !== Object.keys(object2).length) return false;
 
-  for (const key of Object.keys(object1)) {
-    if (!eqArrays(object1[key], object2[key])) return false;
+  for (const key in object1) {
+    if (!object2[key]) return false;
+    if (object1[key] instanceof Array && object2[key] instanceof Array) {
+      if (!eqArrays(object1[key], object2[key])) return false;
+    }
+    if (object1[key] !== object2[key]) return false;
   }
 
   return true;
