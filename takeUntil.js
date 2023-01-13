@@ -35,14 +35,11 @@ const assertArraysEqual = (arr1, arr2) => {
 };
 
 const takeUntil = (array, callback) => {
-  let result = [];
-  for (const item of array) {
+  for (let item of array) {
     if (callback(item)) {
-      break;
+      return array.slice(0, array.indexOf(item));
     }
-    result.push(item);
   }
-  return result;
 };
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
