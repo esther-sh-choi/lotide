@@ -1,20 +1,6 @@
 const util = require("util");
 
-const eqArrays = (arr1, arr2) => {
-  // if arrays are not the same length, they are not equal
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-
-  // if the function didn't return a false so far, it will automatically return true
-  return true;
-};
+const eqArrays = require("./eqArrays");
 
 const assertArraysEqual = (arr1, arr2) => {
   // add util.inspect so that the arrays will be convered to string type before being printed to the console
