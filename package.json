@@ -1,6 +1,6 @@
 {
   "name": "@esther_sh_choi/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A JavaScript utility library that offers simple functions to work with primary data types and objects.",
   "main": "",
   "directories": {
