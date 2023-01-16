@@ -24,3 +24,5 @@ const countLetters = (sentence) => {
 };
 
 console.log(countLetters(""));
+
+module.exports = countLetters;
