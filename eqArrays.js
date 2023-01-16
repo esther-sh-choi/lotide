@@ -1,4 +1,5 @@
 const eqArrays = (arr1, arr2) => {
+  // returns true if two arrays are equal and false otherwise
   if (arr1.length !== arr2.length || typeof arr1 !== typeof arr2) {
     return false;
   }

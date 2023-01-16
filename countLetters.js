@@ -1,4 +1,5 @@
 const countLetters = (sentence) => {
+  // count the number of each letter in a sentence
   const newStr = sentence.toLowerCase();
   let result = {};
 

@@ -31,10 +31,10 @@ module.exports = {
   countOnly,
   countLetters,
   letterPositions,
-  findKey,
   findKeyByValue,
   map,
   takeUntil,
+  findKey,
 };
 
 // Verbose Syntax

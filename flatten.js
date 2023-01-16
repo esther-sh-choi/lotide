@@ -2,6 +2,7 @@ const flatten = (arr) => {
   let newArr = [];
 
   const flattenArray = (array) => {
+    // flatten all the nested arrays into a single flat array
     for (let element of array) {
       if (Array.isArray(element)) {
         if (flattenArray(element)) {
