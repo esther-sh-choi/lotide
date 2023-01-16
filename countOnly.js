@@ -1,5 +1,5 @@
 const countOnly = (allItems, itemsToCount) => {
-  // count only the items in the itemsToCount list from allItems list
+  // from the allItems array, count only the items in the itemsToCount object that states true
   let newObj = {};
   for (let item of allItems) {
     if (!itemsToCount[item]) {

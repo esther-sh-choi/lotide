@@ -1,6 +1,6 @@
-const countLetters = (sentence) => {
-  // count the number of each letter in a sentence
-  const newStr = sentence.toLowerCase();
+const countLetters = (string) => {
+  // takes in a string value and counts the occurance of each character in the string and returns an object containing the count
+  const newStr = string.toLowerCase();
   let result = {};
 
   for (const letter of newStr) {

@@ -1,7 +1,7 @@
-const letterPositions = (sentence) => {
+const letterPositions = (string) => {
   // given a string, return an object that has an index position or a list of the index positions of the letter in the string
   const results = {};
-  for (const [index, letter] of Object.entries(sentence)) {
+  for (const [index, letter] of Object.entries(string)) {
     if (letter !== " ") {
       if (results[letter]) {
         if (!Array.isArray(results[letter])) {
