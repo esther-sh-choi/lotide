@@ -1,9 +1,3 @@
-const assertEqual = (actual, expected) => {
-  actual === expected
-    ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`)
-    : console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-};
-
 const countLetters = (sentence) => {
   const newStr = sentence.toLowerCase();
   let result = {};
@@ -22,7 +16,5 @@ const countLetters = (sentence) => {
 
   return result;
 };
-
-console.log(countLetters(""));
 
 module.exports = countLetters;

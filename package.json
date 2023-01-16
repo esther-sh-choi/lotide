@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@esther_sh_choi/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A JavaScript utility library that offers simple functions to work with primary data types and objects.",
+  "main": "",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/esther-sh-choi/lotide.git"
   },
-  "author": "",
+  "author": "Esther Choi <estherchoi.sh@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/esther-sh-choi/lotide/issues"

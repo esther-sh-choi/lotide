@@ -26,15 +26,15 @@ module.exports = {
   head,
   tail,
   middle,
+  without,
+  flatten,
   countOnly,
   countLetters,
+  letterPositions,
   findKey,
   findKeyByValue,
-  flatten,
-  letterPositions,
   map,
   takeUntil,
-  without,
 };
 
 // Verbose Syntax
