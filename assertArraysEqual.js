@@ -34,4 +34,4 @@ const assertArraysEqual = (arr1, arr2) => {
   /* eslint-enable */
 };
 
-assertArraysEqual([1, 2, 3], [1, 2, "3"]);
+module.exports = assertArraysEqual;

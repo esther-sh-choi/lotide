@@ -5,11 +5,19 @@ const assertEqual = (actual, expected) => {
 };
 
 const countLetters = (sentence) => {
-  const newStr = sentence.split(" ").join("").toLowerCase();
+  const newStr = sentence.toLowerCase();
   let result = {};
 
   for (const letter of newStr) {
-    result[letter] = result[letter] ? result[letter] + 1 : 1;
+    if (letter === " ") {
+      continue;
+    }
+
+    if (!result[letter]) {
+      result[letter] = 0;
+    }
+
+    result[letter]++;
   }
 
   return result;
